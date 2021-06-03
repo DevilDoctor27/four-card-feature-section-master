@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body {
+    height: 100vh;
+    padding: 20px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex-elem {
+    width: 32%;
+}
+
+
+/* Element
+===========*/
+.element {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    max-width: 1480px;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.element__inner {
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.element__suptitle {
+    font-weight: 200;
+    font-size: 2.3rem;
+    color: hsl(234, 12%, 34%);
+}
+
+.element__title {
+    font-weight: 600;
+    font-size: 2.3rem;
+    color: hsl(234, 12%, 34%);
+}
+
+.element__text {
+    margin-top: 1rem;
+    display: inline-block;
+    font-weight: 400;
+    max-width: 550px;
+    font-size: 1rem;
+    color: hsl(229, 6%, 66%);
+}
+
+.element__cards {
+    margin-top: 1.5rem;
+}
+
+
+/* Cards
+===============*/
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards__item {
+    padding: 40px;
+    margin-top: 2rem;
+    border-radius: 5px;
+    border-top: 5px solid;
+    background-color: #fff;
+    text-align: left;
+}
+
+.cyan-line {
+    border-color: hsl(180, 62%, 55%);
+}
+
+.red-line {
+    border-color: hsl(0, 78%, 62%);
+}
+
+.orange-line {
+    border-color: hsl(34, 97%, 64%);
+}
+
+.blue-line {
+    border-color: hsl(212, 86%, 64%);
+}
+
+.cards__title {
+    color: hsl(234, 12%, 34%);
+    font-size: 1.3rem;
+}
+
+.cards__text {
+    margin-top: 1rem;
+    color: hsl(229, 6%, 66%);
+    line-height: 1.8;
+}
+
+.cards__img {
+    display: block;
+    margin: 2.5rem 0 0 auto;
+}
+
+@media (max-width: 1060px) {
+
+    body {
+        padding: 5px 10px;
+    }
+
+    .flex-elem {
+        width: 100%;
+    }
+
+    .element {
+        position: static;
+        transform: none;
+        margin: 0 auto;
+        max-width: 325px;
+        width: 100%;
+    }
+
+    .element__inner {
+        display: block;
+        padding: 60px 20px;
+    }
+
+    .element__suptitle {
+        font-size: 1.3rem;
+    }
+
+    .element__title {
+        font-size: 1.3rem;
+    }
+
+    .element__text {
+        max-width: 250px;
+        font-size: 0.8rem;
+        line-height: 1.8;
+    }
+
+    .cards {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .cards__item {
+        padding: 20px;
+        background-color: #fff;
+        text-align: left;
+    }
+
+    .cards__title {
+        font-size: 1.1rem;
+    }
+
+    .cards__text {
+        font-size: .7rem;
+    }
+
+    .cards__img {
+        margin-top: 1.3rem;
+        transform: scale(.9);
+    }
+}
