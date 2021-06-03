@@ -73,6 +73,7 @@ body {
     border-top: 5px solid;
     background-color: #fff;
     text-align: left;
+    box-shadow: 6px 11px 14px 5px rgba(0,0,0,0.13);
 }
 
 .cyan-line {
